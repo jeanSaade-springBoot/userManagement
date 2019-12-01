@@ -29,22 +29,23 @@ mvn clean install
 ```
 
 
-
 ## API documentation
 http://localhost:9090/swagger-ui.html
 
-
-## Sonar results
-https://sonarcloud.io/dashboard?id=
 
 ## Built With
 
 * [Java](https://spring.io/) - The language Java
 * [Spring Framework](https://spring.io/) - Spring framework
 
+
+## UML Class Diagram
+
+![class_diagram](diagrams/UML.png)
+
 ## Authors
 
-* **Charbel Fannoun**
+* **Jean Saade**
 
 ## License
 
