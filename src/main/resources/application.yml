@@ -1,0 +1,44 @@
+# ===================================================================
+# Spring Boot configuration.
+#
+# This configuration will be overriden by the Spring profile you use,
+# for example application-dev.yml if you use the "dev" profile.
+# ===================================================================
+
+# ===================================================================
+# Standard Spring Boot properties.
+# Full reference is available at:
+# http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+# ===================================================================
+
+
+server:
+  port: 9090
+
+spring:
+  application:
+    name: discountapp
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:h2:mem:discount_db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: user
+    password: user
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update #otherwise scripts will be ignored by hibernate,
+      # and it will scan project for @Entity and/or @Table annotated classes
+
+  # H2 Web Console (H2ConsoleProperties)
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+    implicitRelativePath: true
+
+# Logging
+logging:
+  level:
+    com:
+      retail: TRACE
