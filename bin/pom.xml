@@ -21,12 +21,7 @@
         <io.springfox-version>2.9.2</io.springfox-version>
         <maven-surefire-plugin-version>3.0.0-M4</maven-surefire-plugin-version>
         <org.jacoco-version>0.8.3</org.jacoco-version>
-       
         <sonar.coverage.exclusions>**/domain/**/*,**/config/*,**/dtos/*</sonar.coverage.exclusions>
-        <sonar.projectKey>jeanSaade-springBoot_discount-services</sonar.projectKey>
-        <sonar.organization>jeansaade-springboot</sonar.organization>
-        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.login>d495b10bd907220aa449ea3242e92a408774773e</sonar.login>
     </properties>
 
     <dependencies>

@@ -30,8 +30,15 @@ mvn clean install
 
 
 ## API documentation
-http://localhost:9090/swagger-ui.html
+no swagger documentation available
+*  [api to get all users:]    http://localhost:9090/users api to get all users
+*  [api to save user:]        http://localhost:9090/users/SaveUser/{first-Name}/{last-name}
+*  [api to get user by Id:]   http://localhost:9090/users/id/{user-id}
+*  [api to delete user by Id:] http://localhost:9090/users/deleteUserById/1
 
+## Exception Management
+*  in the class \user-management\src\main\java\com\user\support\ControllerExceptionHandler.java, 
+   exception handling to return 404 if user not found
 
 ## Built With
 
@@ -41,7 +48,7 @@ http://localhost:9090/swagger-ui.html
 
 ## UML Class Diagram
 
-![class_diagram](diagrams/UML.png)
+no uml diagram available
 
 ## Authors
 
